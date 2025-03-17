@@ -3388,6 +3388,21 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() + 150);
 		},
 		() => 0.5,
+		() => "EndGame",
+		() => "Updatedata",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (("https://paw-adventure-99444-default-rtdb.asia-southeast1.firebasedatabase.app/score/" + v0.GetValue()) + ".json");
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			const v4 = p._GetNode(4).GetVar();
+			return () => (((((and((((("{\"User Name\" : \"" + v0.GetValue()) + "\",\"Contact\" : \"") + v1.GetValue()) + "\" ,\"Score\" : \""), v2.GetValue()) + "\",\"Timestamp\" : \"") + v3.GetValue()) + "\",\"Event Location\" : \"") + v4.GetValue()) + "\"}");
+		},
+		() => "PATCH",
 		() => "Obstacles",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -3407,21 +3422,7 @@ self.C3_ExpressionFuncs = [
 		() => "Post Data",
 		() => "registerID",
 		() => "https://paw-adventure-99444-default-rtdb.asia-southeast1.firebasedatabase.app/score.json",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			const v1 = p._GetNode(1).GetVar();
-			const v2 = p._GetNode(2).GetVar();
-			const v3 = p._GetNode(3).GetVar();
-			const v4 = p._GetNode(4).GetVar();
-			return () => (((((and((((("{\"User Name\" : \"" + v0.GetValue()) + "\",\"Contact\" : \"") + v1.GetValue()) + "\" ,\"Score\" : \""), v2.GetValue()) + "\",\"Timestamp\" : \"") + v3.GetValue()) + "\",\"Event Location\" : \"") + v4.GetValue()) + "\"}");
-		},
 		() => "POST",
-		() => "Updatedata",
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (("https://paw-adventure-99444-default-rtdb.asia-southeast1.firebasedatabase.app/score/" + v0.GetValue()) + ".json");
-		},
-		() => "PATCH",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();

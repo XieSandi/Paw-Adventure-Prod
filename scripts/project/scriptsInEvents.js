@@ -3,9 +3,9 @@
 
 const scriptsInEvents = {
 
-	async Maingame_Event2_Act6(runtime, localVars)
+	async Maingame_Event10_Act4(runtime, localVars)
 	{
-		
+		console.log("Update Success")
 	},
 
 	async Mainmenu_Event9_Act2(runtime, localVars)
@@ -23,16 +23,6 @@ const scriptsInEvents = {
 	async Mainmenu_Event10_Act2(runtime, localVars)
 	{
 		console.log("Post Success")
-	},
-
-	async Mainmenu_Event12_Act1(runtime, localVars)
-	{
-		console.log("Button CLicked")
-	},
-
-	async Mainmenu_Event13_Act2(runtime, localVars)
-	{
-		console.log("Update Success")
 	},
 
 	async Mainmenu_Event14_Act2(runtime, localVars)

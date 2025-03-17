@@ -1,0 +1,12 @@
+#input {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 10px;
+	width: 100%;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 2px solid #DF642B;
+	border-radius: 5px;
+	transition: .3s ease;
+}
